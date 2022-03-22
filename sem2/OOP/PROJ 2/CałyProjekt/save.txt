@@ -1,0 +1,14 @@
+12
+(9, 10)
+(0, 0) Human
+(5, 5) Tortoise
+(1, 1) CyberSheep
+(7, 4) Dandelion
+(4, 4) CyberSheep
+(3, 4) Fox
+(2, 4) Guarana
+(6, 3) Grass
+(4, 5) Wolf
+(2, 6) Sheep
+(2, 8) Hogweed
+(2, 3) Sheep

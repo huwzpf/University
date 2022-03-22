@@ -1,0 +1,43 @@
+TURN NUMBER 1
+TURN NUMBER 2
+fox at ( 19,27 ) moves to ( 19,26 )
+fox at ( 2,6 ) moves to ( 1,6 )
+fox at ( 11,8 ) moves to ( 11,7 )
+wolf at ( 0,23 ) moves to ( 1,23 )
+antelope at ( 6,25 ) moves to ( 4,25 )
+sheep at ( 10,28 ) moves to ( 10,29 )
+tortoise at ( 2,13 ) collides with sheep at ( 2,12 )
+tortoise at ( 2,13 ) defends himself
+attacker escaped
+human at ( 11,14 ) moves to ( 11,13 )
+antelope at ( 12,25 ) moves to ( 14,25 )
+antelope at ( 12,13 ) moves to ( 14,13 )
+antelope at ( 7,5 ) moves to ( 5,5 )
+tortoise at ( 0,11 ) moves to ( 0,10 )
+tortoise at ( 11,4 ) moves to ( 12,4 )
+tortoise at ( 13,10 ) moves to ( 12,10 )
+tortoise at ( 15,8 ) moves to ( 14,8 )
+tortoise at ( 18,22 ) moves to ( 18,23 )
+tortoise at ( 17,24 ) moves to ( 17,23 )
+dandelion at ( 7,12 )spreaded
+TURN NUMBER 3
+fox at ( 19,26 ) moves to ( 19,25 )
+fox at ( 1,6 ) moves to ( 1,7 )
+fox at ( 11,7 ) moves to ( 11,6 )
+wolf at ( 1,23 ) moves to ( 1,22 )
+antelope at ( 4,25 ) moves to ( 6,25 )
+sheep at ( 10,29 ) moves to ( 10,29 )
+sheep at ( 2,12 ) moves to ( 2,11 )
+Human activates his ability
+human at ( 11,13 ) moves to ( 13,13 )
+tortoise at ( 14,23 ) collides with antelope at ( 14,25 )
+tortoise at ( 14,23 ) defends himself
+attacker escaped
+antelope at ( 14,13 ) moves to ( 14,11 )
+antelope at ( 5,5 ) moves to ( 5,7 )
+tortoise at ( 11,9 ) moves to ( 10,9 )
+tortoise at ( 10,14 ) moves to ( 9,14 )
+tortoise at ( 0,3 ) moves to ( 0,3 )
+tortoise at ( 14,23 ) moves to ( 13,23 )
+tortoise at ( 14,8 ) moves to ( 14,7 )
+grass at ( 3,20 )spreaded

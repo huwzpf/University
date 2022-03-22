@@ -1,0 +1,24 @@
+﻿  lista.cpp
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(16): warning C4091: 'typedef ': ignored on left of 'List<Type>::element' when no variable is declared
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(55): message : see reference to class template instantiation 'List<Type>' being compiled
+  main.cpp
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(16): warning C4091: 'typedef ': ignored on left of 'List<Type>::element' when no variable is declared
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(55): message : see reference to class template instantiation 'List<Type>' being compiled
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(16): warning C4091: 'typedef ': ignored on left of 'List<Type>::element' when no variable is declared
+          with
+          [
+              Type=const char *
+          ]
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\stos.cpp(28): message : see reference to class template instantiation 'List<Type>' being compiled
+          with
+          [
+              Type=const char *
+          ]
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\stos.cpp(27): message : while compiling class template member function 'Stack<const char *>::Stack(void)'
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\main.cpp(5): message : see reference to function template instantiation 'Stack<const char *>::Stack(void)' being compiled
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\main.cpp(5): message : see reference to class template instantiation 'Stack<const char *>' being compiled
+  stos.cpp
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(16): warning C4091: 'typedef ': ignored on left of 'List<Type>::element' when no variable is declared
+C:\Users\PCu\source\repos\podstawowe struktury\podstawowe struktury\lista.h(55): message : see reference to class template instantiation 'List<Type>' being compiled
+  Generating Code...
+  podstawowe struktury.vcxproj -> C:\Users\PCu\source\repos\podstawowe struktury\Debug\podstawowe struktury.exe
