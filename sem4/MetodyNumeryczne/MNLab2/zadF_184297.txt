@@ -1,0 +1,2 @@
+Najszybsza jest metoda Gaussa_Seidla osiągająca ok. 2 razy krótszy czas wykonania i wykonująca ok. 2 razy mniej iteracji od metody Jacobiego.
+Obie te metody są znacznie szybsze od metody bezpośredniej.

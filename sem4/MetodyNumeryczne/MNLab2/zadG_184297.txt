@@ -1,0 +1,5 @@
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.432583e-01 sekund
+ rozwiązanie metodą Jacobiego nie zbiegło się do rozwiązania po 619 iteracjach
+ rozwiązanie metodą Gaussa-Seidla nie zbiegło się do rozwiązania po 10000 iteracjach
+
+W tym przypadku rozwiązanie metodą bezpośrednią okazalo się jedynym poprawnym, a metody Jacobiego i Gaussa-Seidla nie zbiegają się

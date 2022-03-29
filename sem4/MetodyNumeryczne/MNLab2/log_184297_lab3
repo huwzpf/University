@@ -1,0 +1,121 @@
+main_lab3
+main_lab3
+main_lab3
+main_lab3
+Jacobi
+Jacobi
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+wykres liczby iteracji potrzebnych od osiągnięcia rozwiązania \n od liczby stron w sieci dla metody
+Jacobiego
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\printing\print.m', 36)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\printing\print.m',36,0)">line 36</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('saveas', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\saveas.m', 181)" style="font-weight:bold">saveas</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\saveas.m',181,0)">line 181</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Jacobi', 'C:\Users\Dell\Desktop\lab3\Jacobi.m', 51)" style="font-weight:bold">Jacobi</a> (<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\Jacobi.m',51,0)">line 51</a>)] 
+Jacobi
+[Warning: Error updating Text.
+
+ String scalar or character vector must have valid interpreter syntax:
+wykres liczby iteracji potrzebnych od osiągnięcia rozwiązania {\n} od liczby stron w sieci dla metody
+Jacobiego
+] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\printing\print.m', 36)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\graphics\printing\print.m',36,0)">line 36</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('saveas', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\saveas.m', 181)" style="font-weight:bold">saveas</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\general\saveas.m',181,0)">line 181</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Jacobi', 'C:\Users\Dell\Desktop\lab3\Jacobi.m', 51)" style="font-weight:bold">Jacobi</a> (<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\Jacobi.m',51,0)">line 51</a>)] 
+Jacobi
+Jacobi
+Jacobi
+Jacobi
+main_lab3
+Jacobi
+GS
+GS
+Jacobi
+GS
+Jacobi
+GS
+ZadF
+{Unable to resolve the name Dane_Filtr_Dielektryczny_lab3_MN.mat.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ZadF', 'C:\Users\Dell\Desktop\lab3\ZadF.m', 4)" style="font-weight:bold">ZadF</a> (<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',4,0)">line 4</a>)
+load(Dane_Filtr_Dielektryczny_lab3_MN.mat)
+} 
+ZadF
+{Unrecognized function or variable 'Dane_Filtr_Dielektryczny_lab3_MN'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ZadF', 'C:\Users\Dell\Desktop\lab3\ZadF.m', 4)" style="font-weight:bold">ZadF</a> (<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',4,0)">line 4</a>)
+load(Dane_Filtr_Dielektryczny_lab3_MN)
+} 
+ZadF
+rozwiązanie metodą bezpośrednią wykonano w czasie 3.712000e-01 sekund{Unrecognized function or variable 'D_i_L_U'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ZadF', 'C:\Users\Dell\Desktop\lab3\ZadF.m', 20)" style="font-weight:bold">ZadF</a> (<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',20,0)">line 20</a>)
+   r = D_i_L_U * r + D_i_b;
+} 
+ZadF
+rozwiązanie metodą bezpośrednią wykonano w czasie 3.239293e-01 sekundrozwiązanie metodą Jacobiego wykonano w czasie 1.184980e+00 sekund i w 619 iteracjach<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',44,1)">44  </a>   res = M * r - b;
+if system_dependent('IsDebugMode')==1, dbquit; end
+ZadF
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.285311e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.162142e+00 sekund i w 619 iteracjach<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',44,1)">44  </a>   res = M * r - b;
+opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',44,1)
+norm(res)
+
+ans =
+
+   3.2434e+80
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+ZadF
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 4.675703e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.232941e+00 sekund i w 619 iteracjach<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',44,1)">44  </a>   res = M * r - b;
+if system_dependent('IsDebugMode')==1, dbquit; end
+ZadF
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.576960e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.164723e+00 sekund i w 619 iteracjach<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',44,1)">44  </a>   res = M * r - b;
+norm(res)
+
+ans =
+
+   7.8063e+25
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+norm(res)
+
+ans =
+
+   6.1370e+43
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+ZadF
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.383944e-01 sekund<a href="matlab: opentoline('C:\Users\Dell\Desktop\lab3\ZadF.m',30,1)">30  </a>end
+norm(res)
+
+ans =
+
+   4.3609e+29
+
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.242247e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.212797e+00 sekund i w 619 iteracjachif system_dependent('IsDebugMode')==1, dbquit; end
+ZadF
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.432583e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.162456e+00 sekund i w 619 iteracjach
+ rozwiązanie metodą Gaussa-Seidla nie zbiegło się do rozwiązania po 10000 iteracjachuiopen('C:\Users\Dell\Desktop\lab3\main_lab3.m',1)
+ZadG
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.348342e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.156915e+00 sekund i w 619 iteracjach
+ rozwiązanie metodą Gaussa-Seidla nie zbiegło się do rozwiązania po 10000 iteracjachmain_lab3
+
+ rozwiązanie metodą bezpośrednią wykonano w czasie 3.556826e-01 sekund
+ rozwiązanie metodą Jacobiego wykonano w czasie 1.217255e+00 sekund i w 619 iteracjach
+ rozwiązanie metodą Gaussa-Seidla nie zbiegło się do rozwiązania po 10000 iteracjach
