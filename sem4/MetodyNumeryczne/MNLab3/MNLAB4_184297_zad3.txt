@@ -1,0 +1,4 @@
+Funkcja poprawnie wyznaczyła przybliżone miejsce zerowe dla punktu 6 (w niewielkiej liczbie iteracji, przy pomocy algorytmu interpolacji)
+, gdyż tg(x) jest różniczkowalny w otoczeniu punktu x = 6.
+Dla punktu 4.5 funckja zakończyła działanie (po 68 iteracjach, używając algorytmów interpolacji i bisekcji) nie znajdując miejsca zerowego,
+ bo w otoczeniu punktu x = 4.5 tg(x) posiada asymptoty pionowe, więc nie jest różniczkowalny w znalezionych przedziałach.
