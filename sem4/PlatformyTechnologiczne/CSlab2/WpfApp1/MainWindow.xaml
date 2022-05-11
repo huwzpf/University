@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ToolBarTray Background="White" Height="419" VerticalAlignment="Top">
+            <ToolBar Band="1" BandIndex="1">
+                <Button>
+                    <Menu>
+                        <MenuItem Header="_File" Height="20" Width="39">
+                            <MenuItem Header="_Open" Click="Open" />
+                            <MenuItem Header="_Exit" Click="Exit"/>
+                        </MenuItem>
+                    </Menu>
+                </Button>
+     
+            </ToolBar>
+        </ToolBarTray>
+        <TreeView Margin="0, 30, 0, 40" HorizontalAlignment="Left" Name="tv" Width="390">
+        </TreeView>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" Margin="400,30,10,40">
+            <TextBlock Name="Text" Width="400">
+                Text
+            </TextBlock>
+        </ScrollViewer>
+        <StatusBar Margin="0,380,0,0" Height="20">
+            <StatusBarItem Margin="0,0,0,0"  Height="20" >
+                <TextBlock Name="Status"/>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+
+</Window>
