@@ -69,7 +69,30 @@ class Genetic:
         # (liczby między miejscami krzyżowania w c1 należy przepisać w kolejności
         # w jakiej występują w p2)
 
-        return population
+        children = []
+        for individual in population:
+            pair = random.choice(population)
+            samples = random.sample(range(len(individual)), 2)
+            child = [None for _ in range(len(individual))]
+            if samples[0] > samples[1]:
+                samples[0], samples[1] = samples[1], samples[0]
+            child[:samples[0]] = individual[:samples[0]]
+            child[samples[1]:] = individual[samples[1]:]
+            used_set = set()
+            used_set.update(individual[:samples[0]])
+            used_set.update(individual[samples[1]:])
+
+            position = samples[0]
+            for idx in pair:
+                if idx in used_set:
+                    pass
+                else:
+                    child[position] = idx
+                    position += 1
+
+            children.append(child)
+
+        return children
 
     def mutate_population(self, population):
 
