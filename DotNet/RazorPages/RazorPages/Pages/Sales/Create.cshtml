@@ -1,0 +1,49 @@
+﻿@page
+@using System.Globalization
+@model RazorPages.Pages.Sales.CreateModel
+
+<h4>Sales</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <input type="hidden" asp-for="Sales.ProductName" value="@User.Identity?.Name" />
+            </div>
+            <div class="form-group">
+                <input asp-for="Sales.Date" type="hidden" value="@DateTime.Now.ToString(new CultureInfo(HttpContext.Request.Cookies["Culture"] ?? "en-GB"))" />
+            </div>
+            <div class="form-group">
+                <table>
+                    @for (var i = 0; i < Model.Products.Count; i++)
+                    {
+                        var item = Model.Products.ElementAt(i);
+                        
+                        <tr>
+                            <td>
+                                <label asp-for="@item.Name" class="control-label">@item.Name</label>
+                                <input asp-for="Sales.SalesList[@i].Amount" class="form-control" value="0"/>
+                                <span asp-validation-for="Sales.SalesList[@i].Amount" class="text-danger" max=@item.AvailableAmount></span>
+                                <input type="hidden" name="Sales.SalesList[@i].IdOfProduct" value=@item.Id />
+                                <input type="hidden" name="Sales.SalesList[@i].ProductName" value=@item.Name />
+                                @*<input type="text" name="Sales.SalesList[@i].Amount" value="0" max=@item.AvailableAmount />*@
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

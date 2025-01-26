@@ -1,0 +1,30 @@
+﻿<Window x:Class="GameOfLife.NewGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="New Game" Height="400" Width="200">
+    <StackPanel>
+        <StackPanel.Resources>
+            <Style x:Key="BoardSizeTextBoxStyle" TargetType="TextBox">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="Width" Value="100"/>
+            </Style>
+
+            <Style x:Key="NumbersTextBoxStyle" TargetType="TextBox">
+                <Setter Property="Margin" Value="2"/>
+                <Setter Property="HorizontalAlignment" Value="Left"/>
+                <Setter Property="Width" Value="200"/>
+                <Setter Property="ToolTip" Value="Enter numbers separated by commas"/>
+            </Style>
+        </StackPanel.Resources>
+        <Label Content="Board Width:"/>
+        <TextBox x:Name="BoardWidthTextBox" Text="10" TextChanged="SizeTextBox_TextChanged" Style="{StaticResource BoardSizeTextBoxStyle}"/>
+        <Label Content="Board Height:"/>
+        <TextBox x:Name="BoardHeightTextBox" Text="10" TextChanged="SizeTextBox_TextChanged" Style="{StaticResource BoardSizeTextBoxStyle}"/>
+        <Label Content="Enter Populated (0-8):"/>
+        <TextBox x:Name="PopulatedNumbersTextBox" Text="2,3" TextChanged="NumbersTextBox_TextChanged" Style="{StaticResource NumbersTextBoxStyle}"/>
+        <Label Content="Enter Unpopulated (0-8):"/>
+        <TextBox x:Name="UnpopulatedNumbersTextBox" Text="3"  TextChanged="NumbersTextBox_TextChanged" Style="{StaticResource NumbersTextBoxStyle}"/>
+        <Button Content="Start" Click="StartButton_Click"/>
+    </StackPanel>
+</Window>

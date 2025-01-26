@@ -1,0 +1,81 @@
+﻿@page
+@using DataModel;
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model RazorPages.Pages.Products.CreateModel
+@{
+	HttpContext.Features.Get<IRequestCultureFeature>();
+}
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+	<div class="col-md-4">
+		<form method="post" enctype="multipart/form-data">
+			<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+			<div class="form-group">
+				<label asp-for="Product.Name" class="control-label"></label>
+				<input asp-for="Product.Name" class="form-control" />
+				<span asp-validation-for="Product.Name" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Product.Type" class="control-label"></label>
+				<select asp-for="Product.Type" asp-items="Html.GetEnumSelectList<SupportedTypes>()">
+					<option selected="selected" value="">Please select</option>
+				</select>
+				<span asp-validation-for="Product.Type" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Product.IdOfProducer" class="control-label"></label>
+				<select asp-for="Product.IdOfProducer" class="form-control" asp-items="ViewBag.IdOfProducer"></select>
+			</div>
+			<div class="form-group">
+				<label asp-for="Product.PH" class="control-label"></label>
+				<input asp-for="Product.PH" class="form-control" type="number" step="0.1" value="7" min="5" max="9"/>
+				<span asp-validation-for="Product.PH" class="text-danger"></span>
+			</div>
+
+			<div class="form-group">
+				<label asp-for="Cations" class="control-label"></label>
+				<select multiple asp-for="Cations" asp-items="ViewBag.IdOfCation">
+					<option>Select one or many</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label asp-for="Anions" class="control-label"></label>
+				<select multiple asp-for="Anions" asp-items="ViewBag.IdOfAnion">
+					<option>Select one or many</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label asp-for="Product.PackingType" class="control-label"></label>
+				<input asp-for="Product.PackingType" class="form-control" />
+				<span asp-validation-for="Product.PackingType" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Product.Volume" class="control-label"></label>
+				<input asp-for="Product.Volume" class="form-control" step="0.1" name="obj" />
+				<span asp-validation-for="Product.Volume" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<label asp-for="Product.ImageFile" class="control-label"></label>
+				<input type="file" asp-for="Product.ImageFile" class="form-control" />
+				<span asp-validation-for="Product.ImageFile" class="text-danger"></span>
+			</div>
+			<div class="form-group">
+				<input type="submit" value="Create" class="btn btn-primary" />
+			</div>
+
+		</form>
+	</div>
+</div>
+
+<div>
+	<a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
+}

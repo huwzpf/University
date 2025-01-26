@@ -1,0 +1,28 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model RazorPages.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    <div>Current culture: @(HttpContext.Request.Cookies["Culture"] ?? "en-GB")</div>
+
+    <form id="culture-switcher" method="post">
+        <select name="CurrentUICulture" id="culture-options">
+            @foreach (var culture in Model.SupportedCultures)
+            {
+                <option value="@culture.Name" selected="@(ViewBag.Culture.Name == culture.Name)">@culture.DisplayName</option>
+            }
+        </select>
+
+        <div class="form-group">
+            <input type="submit" value="Set culture" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

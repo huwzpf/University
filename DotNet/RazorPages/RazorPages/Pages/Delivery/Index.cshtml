@@ -1,0 +1,61 @@
+﻿@page
+@model RazorPages.Pages.Delivery.IndexModel
+
+<p>
+	<a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.Delivery[0].Name)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Delivery[0].Email)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Delivery[0].Phone)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Delivery[0].Worker)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Delivery[0].Pallets)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Delivery[0].Data)
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model.Delivery)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Name)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Email)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Phone)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Worker)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Pallets)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Data)
+				</td>
+				<td>
+					<a asp-page="./Edit" asp-route-Id="@item.Id">Edit</a> |
+					<a asp-page="./Details" asp-route-Id="@item.Id">Details</a> |
+					<a asp-page="./Delete" asp-route-Id="@item.Id">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
